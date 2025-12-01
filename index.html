@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио — Телятникова Лиза</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <header class="header">
+        <div class="logo"><span id="logo-text">telyatnikova</span></div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#about">обо мне</a></li>
+            <li><a href="#projects">проекты</a></li>
+            <li><a href="#contacts">контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+
+    <section class="hero">
+        <div class="hero-image">
+            <img src="me.jpg" alt="Портфолио">
+        </div>
+        <h1 class="hero-title">Портфолио</h1>
+            <div class="hero-about">
+            <p>Привет, я Лиза,<br> графический и веб-дизайнер.
+            Создаю визуальные концепции, сайты и айдентику.
+            Люблю минимализм с акцентами и нестандартные решения.</p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2 class="section-title">обо мне</h2>
+        <div class="about-cards">
+      
+          <div class="about-card">
+            <div class="icon">🎨</div>
+            <h3>Графический дизайн</h3>
+            <p>Создаю уникальные визуальные концепции, логотипы и айдентику для брендов.</p>
+          </div>
+      
+          <div class="about-card">
+            <div class="icon">💻</div>
+            <h3>Веб-дизайн</h3>
+            <p>Проектирую удобные интерфейсы и макеты сайтов, учитывая UX и UI.</p>
+          </div>
+      
+          <div class="about-card">
+            <div class="icon">⚡</div>
+            <h3>Что я не делаю</h3>
+            <p>Не занимаюсь сложным программированием, SEO-продвижением и 3D-анимацией.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="icon">🛠️</div>
+            <h3>Инструменты</h3>
+            <p>Свободно работаю с Figma, Adobe Illustrator, Photoshop и другими современными инструментами дизайна.</p>
+          </div>
+      
+        </div>
+      </section>
+    <section id="projects" class="projects">
+        <div class="projects-header">
+          <h2 class="section-title">проекты</h2>
+          <div class="projects-nav">
+            <button class="nav-btn prev">&#8592;</button>
+            <button class="nav-btn next">&#8594;</button>
+          </div>
+        </div>
+      
+        <div class="projects-grid">
+
+            <!-- Проект 1 -->
+            <div class="project">
+                <img src="1.jpg" alt="Работа 1">
+                <p class="project-title">Создание персонализированной визитки</p>
+              </div>
+          
+              <div class="project">
+                <img src="2.jpg" alt="Работа 2">
+                <p class="project-title">Дизайн веб-приложения</p>
+              </div>
+          
+              <div class="project">
+                <img src="3.jpg" alt="Работа 3">
+                <p class="project-title">Разработка айдентики</p>
+              </div>
+        
+        </div>
+      
+        <div class="cta">
+            <button class="btn">Заказать дизайн</button>
+        </div>
+      </section>
+      <section id="contacts" class="contacts">
+        <h2 class="section-title">контакты</h2>
+        <div class="contacts-cards">
+      
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <h3>Email</h3>
+            <p><a href="mailto:hello@telyatnikova.com">hello@telyatnikova.com</a></p>
+          </div>
+      
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <h3>Телефон</h3>
+            <p><a href="tel:+79123456789">+7 912 345-67-89</a></p>
+          </div>
+      
+          <div class="contact-card">
+            <div class="contact-icon">🌐</div>
+            <h3>Соцсети</h3>
+            <p>
+              <a href="https://www.instagram.com">Instagram</a> | 
+              <a href="https://www.behance.net">Behance</a>
+            </p>
+          </div>
+      
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-content">
+          <p>Сделано с помощью <strong>DeepSeek AI</strong></p>
+          <p>Время выполнения: <strong>2 часа</strong></p>
+          <div class="footer-links">
+            <a href="#about">обо мне</a>
+            <a href="#projects">проекты</a>
+            <a href="#contacts">контакты</a>
+          </div>
+          <p class="copyright">© 2025 Телятникова Елизавета. Все права защищены.</p>
+        </div>
+      </footer>
+      <!-- Модальное окно формы -->
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Заказать дизайн</h2>
+    <p>Заполните форму и я свяжусь с вами в ближайшее время</p>
+    
+    <form id="orderForm" class="order-form">
+      <div class="form-group">
+        <label for="clientName">Ваше имя *</label>
+        <input type="text" id="clientName" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="clientEmail">Email *</label>
+        <input type="email" id="clientEmail" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="clientPhone">Телефон</label>
+        <input type="tel" id="clientPhone" name="phone">
+      </div>
+      
+      <div class="form-group">
+        <label for="projectType">Тип проекта *</label>
+        <select id="projectType" name="projectType" required>
+          <option value="">Выберите тип проекта</option>
+          <option value="Логотип и айдентика">Логотип и айдентика</option>
+          <option value="Веб-дизайн">Веб-дизайн</option>
+          <option value="Графический дизайн">Графический дизайн</option>
+          <option value="Другое">Другое</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="budget">Бюджет *</label>
+        <select id="budget" name="budget" required>
+          <option value="">Выберите бюджет</option>
+          <option value="до 10 000 руб">до 10 000 руб</option>
+          <option value="10 000 - 30 000 руб">10 000 - 30 000 руб</option>
+          <option value="30 000 - 50 000 руб">30 000 - 50 000 руб</option>
+          <option value="свыше 50 000 руб">свыше 50 000 руб</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Опишите ваш проект *</label>
+        <textarea id="message" name="message" rows="4" placeholder="Расскажите о ваших идеях, сроках и пожеланиях..." required></textarea>
+      </div>
+      
+      <button type="submit" class="submit-btn">Отправить заявку</button>
+    </form>
+    
+    <div id="formMessage" class="form-message"></div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
